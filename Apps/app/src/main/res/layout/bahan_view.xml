@@ -3,81 +3,82 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="170dp">
-
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="#EFEFEF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/labelNama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="6dp"
-        android:text="Nama bahan"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:layout_height="wrap_content">
 
     <EditText
-        android:id="@+id/namaBahan"
-        android:layout_width="wrap_content"
+        android:id="@+id/beratBahan"
+        android:layout_width="48dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="6dp"
-        android:hint="Daging Ayam"
-        android:ems="6"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:hint="999"
         android:inputType="text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/labelNama" />
+        android:textColor="#35394D"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/labelNama2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:text="Kg V"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelNama2" />
 
     <TextView
         android:id="@+id/labelNama2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="6dp"
-        android:text="Harga"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Harga Beli Bahan"
+        android:textColor="#838592"
+        android:textSize="12"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/namaBahan" />
+        app:layout_constraintTop_toBottomOf="@+id/labelNama" />
 
     <EditText
         android:id="@+id/hargaBahan"
-        android:layout_width="wrap_content"
+        android:layout_width="192dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="6dp"
-        android:hint="29000"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
         android:ems="6"
+        android:hint="29000"
         android:inputType="text"
+        android:textColor="#35394D"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labelNama2" />
 
-    <EditText
-        android:id="@+id/beratBahan"
+    <TextView
+        android:id="@+id/labelNama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="6dp"
-        android:hint="999"
-        android:inputType="text"
-        app:layout_constraintStart_toEndOf="@id/namaBahan"
-        app:layout_constraintTop_toBottomOf="@+id/labelNama" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="22dp"
+        android:text="Daging Ayam"
+        android:textColor="#1D1F2C"
+        android:textSize="18"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:layout_width="70dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="6dp"
-        android:text="Kg V"
-        app:layout_constraintStart_toEndOf="@+id/beratBahan"
+    <TextView
+        android:id="@+id/labelNama3"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Jml Beli"
+        android:textColor="#838592"
+        android:textSize="12"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/labelNama" />
 
 
