@@ -1,39 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".Barang"
     android:orientation="vertical">
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/barang"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/rp_50_000"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fitsSystemWindows="true"
-        android:scaleType="centerCrop"
-        android:background="@color/black"
-        app:layout_collapseMode="parallax">
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="199dp"
+        tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/judul"
+        <Spinner
+            android:id="@+id/spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="36dp"
-            android:text="@string/barang"
-            android:textColor="@color/white"
-            android:textSize="40sp" />
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="29dp" />
 
         <TextView
+            android:id="@+id/resep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/judul"
-            android:layout_marginTop="15dp"
             android:layout_marginStart="25dp"
-            android:layout_marginBottom="36dp"
-            android:textColor="@color/white"
-            android:text="@string/rp_50_000"
-            android:textSize="24sp" />
-    </RelativeLayout>
-</LinearLayout>
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:textSize="24sp"
+            android:text="@string/resep"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:background="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/resep"
+            app:srcCompat="@android:drawable/arrow_up_float"
+            tools:layout_editor_absoluteY="36dp"
+            android:contentDescription="@string/todo" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="@string/edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="302dp"
+            tools:ignore="RtlCompat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
