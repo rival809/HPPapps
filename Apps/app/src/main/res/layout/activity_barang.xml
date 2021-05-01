@@ -9,30 +9,53 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:fitsSystemWindows="true"
         android:scaleType="centerCrop"
+        android:background="@color/black"
         app:layout_collapseMode="parallax">
 
         <TextView
             android:id="@+id/judul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
             android:text="@string/barang"
-            android:textSize="40dp" />
+            android:textColor="@color/white"
+            android:textSize="40sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/judul"
-            android:layout_marginLeft="25dp"
-            android:text="Ayam"
-            android:textSize="35dp" />
-
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="36dp"
+            android:textColor="@color/white"
+            android:text="@string/rp_50_000"
+            android:textSize="24sp" />
     </RelativeLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resep"
+            android:textSize="24sp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Edit" />
+    </LinearLayout>
 </LinearLayout>
