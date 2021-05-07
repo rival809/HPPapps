@@ -15,4 +15,6 @@
     <string name="todo">TODO</string>
     <string name="edit">Edit</string>
     <string name="lorem_ipsum">Lorem Ipsum</string>
+    <string name="drop">drop</string>
+    <string name="bahan">Bahan</string>
 </resources>
