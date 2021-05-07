@@ -80,7 +80,7 @@
                 android:layout_marginBottom="5dp"
                 android:ems="11"
                 android:fontFamily="sans-serif"
-                android:text="Cancel"
+                android:text="Remove Amount"
                 android:textColor="@color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"

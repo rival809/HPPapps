@@ -41,13 +41,14 @@
             android:textSize="24sp" />
 
         <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/resep"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="-4dp"
             android:layout_marginEnd="24dp"
-            android:text="Edit" />
+            android:text="Add" />
 
     </RelativeLayout>
 
@@ -88,7 +89,7 @@
                 android:layout_marginBottom="5dp"
                 android:ems="11"
                 android:fontFamily="sans-serif"
-                android:text="Cancel"
+                android:text="Remove Item"
                 android:textColor="@color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
