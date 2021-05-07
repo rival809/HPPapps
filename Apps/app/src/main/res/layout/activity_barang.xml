@@ -36,7 +36,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
         android:text="@string/resep"
-        android:textColor="#1D1F2C"
+        android:textColor="#2B2B2B"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
