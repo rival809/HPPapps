@@ -52,7 +52,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_container"
         android:layout_width="match_parent"
-        android:layout_height="472dp"
+        android:layout_height="502dp"
         android:layout_marginTop="0dp"
         android:padding="7dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
