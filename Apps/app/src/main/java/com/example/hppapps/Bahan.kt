@@ -12,15 +12,14 @@ class Bahan : AppCompatActivity() {
         setContentView(R.layout.activity_bahan)
 
         val tombolSave: Button = findViewById(R.id.tombolSave)
-        val tombolCancle: Button = findViewById(R.id.tombolCancel)
+        val tombolRemove: Button = findViewById(R.id.tombolRemove)
 
         tombolSave.setOnClickListener(View.OnClickListener {
             val i = Intent(this@Bahan, MainMenu::class.java)
             startActivity(i)
         })
-        tombolCancle.setOnClickListener(View.OnClickListener {
-            val i = Intent(this@Bahan, Resep::class.java)
-            startActivity(i)
+        tombolRemove.setOnClickListener(View.OnClickListener {
+
         })
     }
 }

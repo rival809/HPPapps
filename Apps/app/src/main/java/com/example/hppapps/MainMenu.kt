@@ -15,7 +15,7 @@ class MainMenu : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar))
 
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Berhasil membuat perhitungan baru", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
             val i = Intent(this@MainMenu, Barang::class.java)
             startActivity(i)

@@ -12,15 +12,19 @@ class Resep : AppCompatActivity() {
         setContentView(R.layout.activity_resep)
 
         val tombolNext: Button = findViewById(R.id.tombolNext)
-        val tombolCancle: Button = findViewById(R.id.tombolCancel)
+        val tombolRemove: Button = findViewById(R.id.tombolRemove)
+        val tombolAdd: Button = findViewById(R.id.buttonAdd)
+
 
         tombolNext.setOnClickListener(View.OnClickListener {
-            val i = Intent(this@Resep, Bahan::class.java)
-            startActivity(i)
-        })
-        tombolCancle.setOnClickListener(View.OnClickListener {
             val i = Intent(this@Resep, Barang::class.java)
             startActivity(i)
+        })
+        tombolRemove.setOnClickListener(View.OnClickListener {
+
+        })
+        tombolAdd.setOnClickListener(View.OnClickListener {
+
         })
     }
 }
