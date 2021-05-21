@@ -3,8 +3,10 @@ package com.example.hppapps
 import java.util.stream.*;
 
 public class HelloWorld{
-
     public static void main(String []args){
+
+        kalkulasi convert = new kalkulasi();
+        convert.konversiSatuan();
         //Koversi satuan
 
         //----------------
@@ -41,8 +43,21 @@ public class HelloWorld{
         //panggil class konversi
         //masukkan ke dalam array arrayResepSatuan
 
+        //public class KalkulasiResep
+        double hargaResepSatuan = hargaBeliSatuan / jumlahBeliSatuan * jumlahResepSatuan;
 
-        //public class konversiSatuan
+        System.out.println("\nHarga resep = Rp. " + hargaResepSatuan);
+
+        //Sum all hargaResepSatuan (Dynamic Array)
+        double[] hargaResep = {10, 50, 30, 20};
+
+        double hargaBarang = DoubleStream.of(hargaResep).sum();
+        System.out.println("\nHarga per Barang = Rp. " + hargaBarang);
+    }
+}
+
+public class kalkulasi{
+    public void konversiSatuan{
         //Ambil Jumlah
         double konversi = jumlahBeliSatuan;
 
@@ -68,18 +83,6 @@ public class HelloWorld{
         }
 
         System.out.println("\nKonversi = " + konversi + " dari satuan " + satuan);
-
-
-        //public class KalkulasiResep
-        double hargaResepSatuan = hargaBeliSatuan / jumlahBeliSatuan * jumlahResepSatuan;
-
-        System.out.println("\nHarga resep = Rp. " + hargaResepSatuan);
-
-        //Sum all hargaResepSatuan (Dynamic Array)
-        double[] hargaResep = {10, 50, 30, 20};
-
-        double hargaBarang = DoubleStream.of(hargaResep).sum();
-        System.out.println("\nHarga per Barang = Rp. " + hargaBarang);
     }
 
 }
