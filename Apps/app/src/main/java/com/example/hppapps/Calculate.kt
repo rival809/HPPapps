@@ -1,24 +1,31 @@
 package com.example.hppapps
 
-class Conversion(){
-    //Conversion is for calculation
-    int litre, mililitre, ton, kilogram, gram, miligram, lusin, rim, spoon, teaspoon, piece;
-    //Conversion Variables
-    //Litre, spoon, teaspon => mililitre
-    //Ton, kilogram, gram => miligram
-    //Lusin, rim => piece
+public class konversiSatuan{
+    //Ambil Jumlah
+    double konversi = 3;
+    System.out.println("Jumlah = " + konversi);
 
-    //if else
-    int xlitre, xton, xkilogram, xgram, xlusin, xrim, xspoon, xteaspoon;
-    xlitre = litre * 1000;
-    xton = ton * 1000000000;
-    xkilogram = kilogram * 1000000;
-    xgram = gram * 1000;
-    xlusin = lusin * 12;
-    xrim = rim * 500;
-    xspoon = spoon * 15;
-    xteaspoon = teaspoon * 45;
+    //Ambil Satuan
+    String satuan = "miligram";
+    System.out.println("Satuan = " + satuan);
 
+    if (satuan == "ton"){
+        konversi = konversi * 1000000000; //Ton -> mg
+    } if (satuan == "kg"){
+        konversi = konversi * 1000000; //Kilogram -> mg
+    } if (satuan == "gram"){
+        konversi = konversi * 1000; //Gram -> mg
+    } if (satuan == "lusin"){
+        konversi = konversi * 12; //Lusin -> piece
+    } if (satuan == "rim"){
+        konversi = konversi * 500; //Rim -> piece
+    } if (satuan == "litre"){
+        konversi = konversi * 1000; //Liter -> ml
+    } if (satuan == "spoon"){
+        konversi = konversi * 15; //Sendok makan -> ml
+    } if (satuan == "teaspoon"){
+        konversi = konversi * 45; //Sendok teh -> ml
+    }
 }
 
 //RUMUS UTAMA Harga Resep
