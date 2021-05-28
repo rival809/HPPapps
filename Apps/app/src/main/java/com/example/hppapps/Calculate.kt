@@ -3,7 +3,7 @@ package com.example.hppapps
 import java.util.stream.*;
 import java.util.Arrays;
 
-public class HelloWorld{
+public class Calculate{
     public static void main(String []args){
 
         kalkulasi convert = new kalkulasi();
