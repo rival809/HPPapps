@@ -5,7 +5,7 @@ import androidx.annotation.RequiresApi
 import java.util.stream.*;
 import java.util.Arrays;
 
-object Calculate{
+object Calculate {
     @RequiresApi(Build.VERSION_CODES.N)
     @JvmStatic
     fun main(args: Array<String>) {

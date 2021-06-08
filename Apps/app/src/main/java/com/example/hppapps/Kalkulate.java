@@ -1,14 +1,18 @@
 package com.example.hppapps;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import java.util.stream.*;
 import java.util.Arrays;
 
 public class Kalkulate{
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public static void main(String []args){
 
-        Kalkulasi convert = new Kalkulasi();
-        FromInput fromInput = new FromInput();
-        private int i;
+        Kalkulasii convert = new Kalkulasii();
+        int i;
         //Change maximum array size:
         int arraySize = 15;
         double x;
@@ -21,19 +25,19 @@ public class Kalkulate{
         //----------------
 
         //--Input Resep
-        public double[] arrayJumlahResepSatuan = new double[arraySize];
+        double[] arrayJumlahResepSatuan = new double[arraySize];
         arrayJumlahResepSatuan [0] = 50; //Cabe keriting
         arrayJumlahResepSatuan [1] = 25; //Cabe rawit
         arrayJumlahResepSatuan [2] = 14; //Bawang putih
 
         //--Input Satuan Resep
-        public String[] arraySatuanResep = new String[arraySize];
+        String[] arraySatuanResep = new String[arraySize];
         arraySatuanResep [0] = "gram";
         arraySatuanResep [1] = "gram";
         arraySatuanResep [2] = "gram";
 
         //Loop Array Class Konversi
-        public double[] arrayKonversiResep = new double[arraySize];
+        double[] arrayKonversiResep = new double[arraySize];
         for (i = 0; i < arrayJumlahResepSatuan.length; i++) {
             //Akses setiap anggota array
             arrayKonversiResep[i] = convert.konversiSatuan(arrayJumlahResepSatuan[i], arraySatuanResep[i]);
@@ -47,26 +51,26 @@ public class Kalkulate{
         //----------------
 
         //--Input Harga Barang
-        public double[] arrayHargaBeliSatuan = new double[arraySize];
+        double[] arrayHargaBeliSatuan = new double[arraySize];
         arrayHargaBeliSatuan [0] = 35000;
         arrayHargaBeliSatuan [1] = 30000;
         arrayHargaBeliSatuan [2] = 30000;
 
         //--Input Jumlah Barang
-        public double[] arrayJumlahBeliSatuan = new double[arraySize];
+        double[] arrayJumlahBeliSatuan = new double[arraySize];
         arrayJumlahBeliSatuan [0] = 1;
         arrayJumlahBeliSatuan [1] = 1;
         arrayJumlahBeliSatuan [2] = 1;
 
         //--Input Satuan Barang
-        public String[] arraySatuanBarang = new String[arraySize];
+        String[] arraySatuanBarang = new String[arraySize];
         arraySatuanBarang[0] = "kg";
         arraySatuanBarang[1] = "kg";
         arraySatuanBarang[2] = "kg";
 
         //-----Memanggil Class Konversi
 
-        public double[] arrayKonversiSatuanBarang = new double[arraySize];
+        double[] arrayKonversiSatuanBarang = new double[arraySize];
         for (i = 0; i < arrayJumlahResepSatuan.length; i++) {
             //Akses setiap anggota array
             arrayKonversiSatuanBarang[i] = convert.konversiSatuan(arrayJumlahBeliSatuan[i], arraySatuanBarang[i]);
@@ -93,7 +97,7 @@ public class Kalkulate{
     }
 }
 
-class Kalkulasi{
+class Kalkulasii{
     static double konversiSatuan(double konversi, String satuan){
 
         if (satuan == "ton"){
